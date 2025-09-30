@@ -408,3 +408,9 @@ mark {
 #intro-image .real {
   opacity: 0; 
 }
+
+
+
+#clustrmaps {
+    display: none !important;
+}
