@@ -107,9 +107,9 @@ h1 {
 }
 
 #intro-image {
-  margin: 3em 0em 2em -1em;
-  width: 12em;
-  height: 15.8em;
+  margin: 3em 1em 2em -1em;
+  width: 10em;
+  height: 10em;
   float: left;
   overflow: hidden;
   padding-right: 2em;
@@ -117,7 +117,15 @@ h1 {
 }
 
 #intro-image img {
-  width: 12em;
+  width: 10em;
+}
+
+/**************************************************/
+/* News. */
+
+#news-container p::before {
+  content: "☛ ";   /* 你可以改成 "• " 或者 "▪ " */
+  color: #555;     /* 前缀颜色，可自定义 */
 }
 
 /**************************************************/
@@ -300,12 +308,18 @@ h3 a:hover {
   color: #a0a8b0;
 }
 
+.new p {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #150c21;
+}
+
 .project {
   margin-bottom: 0.5em;
 }
 
 .project p {
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.5em;
   color: #a0a8b0;
 }
