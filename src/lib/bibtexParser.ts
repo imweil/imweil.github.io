@@ -88,6 +88,9 @@ export function parseBibTeX(bibtexContent: string): Publication[] {
       description: cleanBibTeXString(tags.description || tags.note),
       selected,
       preview,
+      reward: tags.reward,
+      abbr: tags.abbr,
+      rank: tags.rank,
 
       // Store original BibTeX (excluding custom fields)
       bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code']),
