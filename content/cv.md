@@ -1,26 +1,16 @@
-## Education
 
-**The University of Example**, PhD in Natural Science, *2025 - Present*
-- Research focus: Mathematical Principles of Natural Philosophy
-- Supervisor: Prof. Advisor One and Dr. Advisor Two
+## 🎓 Education
 
-**The University of Example**, BSc in Natural Science, *2021 - 2025*
-- Graduated with First Class Honours
+**Nanjing University**, Ph.D. in Computer Science and Technology, *2026 - 2030*
+- Research focus: Large Languahe Models
+- Supervisor: Prof. [Guanghui Zhu](https://cs.nju.edu.cn/zgh/)
 
-## Experience
+**Zhengzhou University**, M.Sc. in Software Engineering, *2022 - 2025*
+- Research focus: Spatiotemporal Big Data and Smart Logistics
+- Supervisor: Prof. [Yafei Li](https://zzudb.github.io)
 
-**Example Role**
-Company/Institution
-*2023 - 2024*
-- Description of key responsibilities and achievements.
-- Utilized skills to solve problems.
+**Zhengzhou University**, B.Sc. in Mechanical Engineering, *2018 - 2022*
+- Minor in Business Administration
 
-## Skills
-
-- **Programming:** Python, C++, MATLAB, LaTeX
-- **Data Analysis:** Pandas, NumPy, SciPy
-- **Languages:** English (Native), French (Fluent)
-
-## Awards & Honors
-
-- **First Prize in Example Competition** - Committee of Example (*2024*)
+## 📄 Full CV
+You can view my full CV by clicking [HERE](https://drive.google.com/file/d/1YXde2iY2zwtJKPRhEgia_oPetMypxljb/view) (PDF format on Google Drive).

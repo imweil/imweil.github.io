@@ -1,7 +1,11 @@
-[[news]]
-date = "2025-11"
-content = "Our work has been accepted by a prestigious journal 🎉"
+# [[news]]
+# date = "2026-09"
+# content = "Starting my PhD at the Nanjing University"
 
 [[news]]
-date = "2025-09"
-content = "Starting my PhD at the University of Example"
+date = "2025-04"
+content = "My paper [_Credit Assignment and Fine-Tuning Enhanced Reinforcement Learning for Collaborative Spatial Crowdsourcing_](https://www.ijcai.org/proceedings/2025/459) has been accepted to IJCAI 2025 🎉."
+
+[[news]]
+date = "2024-12"
+content = "My paper [_Gradient-Guided Credit Assignment and Joint Optimization for Dependency-Aware Spatial Crowdsourcing_](https://ojs.aaai.org/index.php/AAAI/article/view/33566) has been accepted to AAAI 2025 __Oral__ 🎉 ."

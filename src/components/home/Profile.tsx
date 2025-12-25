@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import Script from 'next/script';
 import {
     EnvelopeIcon,
     AcademicCapIcon,
@@ -312,6 +313,17 @@ export default function Profile({ author, social, features, researchInterests }:
                     </div>
                 </div>
             )}
+
+            {/* Visitor Map (ClustrMaps) */}
+            <div className="flex justify-center mb-6">
+              <div id="clustrmaps" className="rounded-lg overflow-hidden" />
+              <Script
+                id="clustrmaps-script"
+                type="text/javascript"
+                src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=150&t=n&d=fgXsumJl_Ly9_x6WACyHmXYH7yCRNNa2Zi1Z5bkDLUI"
+                strategy="afterInteractive"
+              />
+            </div>
 
             {/* Like Button */}
             {features.enable_likes && (

@@ -34,13 +34,15 @@ export default function TextPage({ config, content, embedded = false }: TextPage
                         ul: ({ children }) => <ul className="list-disc list-inside mb-4 space-y-1 ml-4">{children}</ul>,
                         ol: ({ children }) => <ol className="list-decimal list-inside mb-4 space-y-1 ml-4">{children}</ol>,
                         li: ({ children }) => <li className="mb-1">{children}</li>,
-                        a: ({ ...props }) => (
+                        a: ({ children, ...props }) => (
                             <a
                                 {...props}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-accent font-medium hover:underline transition-colors"
-                            />
+                                className="text-accent font-medium transition-all duration-200 rounded no-underline hover:no-underline hover:bg-accent/10 hover:shadow-sm"
+                            >
+                                {children}
+                            </a>
                         ),
                         blockquote: ({ children }) => (
                             <blockquote className="border-l-4 border-accent/50 pl-4 italic my-4 text-neutral-600 dark:text-neutral-500">

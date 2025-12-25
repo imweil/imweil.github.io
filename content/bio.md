@@ -1,5 +1,4 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+I will join Nanjing University as an incoming PhD student in Fall 2026, advised by [Prof. Guanghui Zhu](https://cs.nju.edu.cn/zgh/).
+Prior to this, I obtained an M.Sc. in Software Engineering (under the supervision of [Prof. Yafei Li](https://zzudb.github.io)) and a B.Sc. in Mechanical Engineering from Zhengzhou University.
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
-
-My current research focuses on investigating the mathematical principles of natural philosophy.
+My current research focuses on the training and fine-tuning of large language models, with an emphasis on preference alignment and reinforcement learning from human feedback.
