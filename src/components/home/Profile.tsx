@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import Script from 'next/script';
 import {
     EnvelopeIcon,
     AcademicCapIcon,
@@ -43,7 +42,7 @@ export default function Profile({ author, social, features, researchInterests }:
     const [showEmail, setShowEmail] = useState(false);
     const [isEmailPinned, setIsEmailPinned] = useState(false);
     const [lastClickedTooltip, setLastClickedTooltip] = useState<'email' | 'address' | null>(null);
-
+    
     // Check local storage for user's like status
     useEffect(() => {
         if (!features.enable_likes) return;
@@ -314,16 +313,25 @@ export default function Profile({ author, social, features, researchInterests }:
                 </div>
             )}
 
-            {/* Visitor Map (ClustrMaps) */}
-            <div className="flex justify-center mb-6">
-              <div id="clustrmaps" className="rounded-lg overflow-hidden" />
-              <Script
-                id="clustrmaps-script"
-                type="text/javascript"
-                src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=150&t=n&d=fgXsumJl_Ly9_x6WACyHmXYH7yCRNNa2Zi1Z5bkDLUI"
-                strategy="afterInteractive"
-              />
-            </div>
+            {/* Visitor Map - 新增部分 */}
+            <div className="flex justify-center">
+                <a
+                    href="https://clustrmaps.com/site/1c6ry"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src="//clustrmaps.com/map_v2.png?cl=080808&w=180&t=n&d=fgXsumJl_Ly9_x6WACyHmXYH7yCRNNa2Zi1Z5bkDLUI&co=ffffff&ct=808080"
+                        alt="Visitor Map"
+                        className="w-full max-w-[320px] rounded-md block dark:hidden"
+                    />
+                    <img
+                        src="//clustrmaps.com/map_v2.png?cl=ffffff&w=180&t=n&d=fgXsumJl_Ly9_x6WACyHmXYH7yCRNNa2Zi1Z5bkDLUI&co=0f172a&ct=808080"
+                        alt="Visitor Map"
+                        className="w-full max-w-[320px] rounded-md hidden dark:block"
+                    />
+                </a>
+            </div>            
 
             {/* Like Button */}
             {features.enable_likes && (
