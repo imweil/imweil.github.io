@@ -93,7 +93,7 @@ export function parseBibTeX(bibtexContent: string): Publication[] {
       rank: tags.rank,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'reward', 'abbr', 'rank']),
     };
 
     // Clean up undefined fields
