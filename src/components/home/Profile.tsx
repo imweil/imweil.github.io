@@ -321,14 +321,9 @@ export default function Profile({ author, social, features, researchInterests }:
                     rel="noopener noreferrer"
                 >
                     <img
-                        src="//clustrmaps.com/map_v2.png?cl=080808&w=180&t=n&d=fgXsumJl_Ly9_x6WACyHmXYH7yCRNNa2Zi1Z5bkDLUI&co=ffffff&ct=808080"
+                        src="//clustrmaps.com/map_v2.png?cl=080808&w=150&t=n&d=fgXsumJl_Ly9_x6WACyHmXYH7yCRNNa2Zi1Z5bkDLUI&co=ffffff&ct=808080"
                         alt="Visitor Map"
-                        className="w-full max-w-[320px] rounded-md block dark:hidden"
-                    />
-                    <img
-                        src="//clustrmaps.com/map_v2.png?cl=ffffff&w=180&t=n&d=fgXsumJl_Ly9_x6WACyHmXYH7yCRNNa2Zi1Z5bkDLUI&co=0f172a&ct=808080"
-                        alt="Visitor Map"
-                        className="w-full max-w-[320px] rounded-md hidden dark:block"
+                        className="w-full max-w-[320px] rounded-md"
                     />
                 </a>
             </div>            
