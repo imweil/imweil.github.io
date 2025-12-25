@@ -30,7 +30,7 @@ linkedin = ""
 enable_likes = false
 
 # Display all subpages on a single page
-enable_one_page_mode = false
+enable_one_page_mode = true
 
 [[navigation]]
 title = "About"
