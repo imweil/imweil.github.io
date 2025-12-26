@@ -212,19 +212,28 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     </div>
                                 )}
                                 <div className="flex-grow">
-                                    {/* Title and reward in the same row */}
-                                    <div className="flex items-center justify-between">
-                                        <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary mb-2 leading-tight`}>
-                                            {pub.title}
-                                        </h3>
-                                        {/* Reward section to the right */}
-                                        {pub.reward && (
-                                            <div className="flex-shrink-0 ml-4">
-                                                <span className="inline-block px-2 py-1 rounded border-2 border-accent bg-accent/10 text-accent text-xs font-semibold">
-                                                    {pub.reward}
-                                                </span>
-                                            </div>
-                                        )}
+                                    {/* Title and reward (desktop: same row; mobile: reward under title, left-aligned) */}
+                                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                                    <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary leading-tight`}>
+                                        {pub.title}
+                                    </h3>
+
+                                    {pub.reward && (
+                                        <div className="flex-shrink-0 mt-2 sm:mt-0 sm:ml-4 self-start sm:self-auto flex flex-wrap gap-2 sm:flex-col sm:items-end sm:gap-0.5">
+                                            {pub.reward
+                                                .split(';')
+                                                .map((s) => s.trim())
+                                                .filter(Boolean)
+                                                .map((rewardPart, idx) => (
+                                                    <span
+                                                        key={`reward-${idx}`}
+                                                        className="inline-block px-2 py-1 rounded border-2 border-accent bg-accent/10 text-accent text-xs font-semibold"
+                                                    >
+                                                        {rewardPart}
+                                                    </span>
+                                                ))}
+                                        </div>
+                                    )}
                                     </div>
                                     <p className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-400 mb-2`}>
                                         {pub.authors.map((author, idx) => (
@@ -301,7 +310,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                         )}
                                         {/* Right-aligned metadata: Abbreviation (abbr) + Rank */}
                                         {(pub.abbr || pub.rank) && (
-                                            <div className="ml-auto flex flex-wrap items-center gap-2">
+                                            <div className="flex flex-wrap items-center gap-2 basis-full order-first justify-start mb-2 sm:mb-0 sm:basis-auto sm:order-last sm:justify-end sm:ml-auto">
                                                 {/* Abbreviation (abbr) - Split by semicolon */}
                                                 {pub.abbr &&
                                                     pub.abbr.split(';').map((abbrPart, index) => (
