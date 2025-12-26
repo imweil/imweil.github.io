@@ -15,8 +15,8 @@
   --primary-light: #334155;
   --primary-dark: #0f172a;
   --accent: #69075A;
-  --accent-light: #a10b8b;
-  --accent-dark: #e431c9;
+  --accent-light: #8E3A7C; 
+  --accent-dark: #4A043F;  
   
   /* Neutral colors */
   --neutral-50: #f8fafc;
@@ -137,9 +137,9 @@
   --primary: #f8fafc;
   --primary-light: #e2e8f0;
   --primary-dark: #cbd5e1;
-  --accent: #e98ddb;
-  --accent-light: #d68dca;
-  --accent-dark: #69075a;
+  --accent: #C77DBB;
+  --accent-light: #E1B4D8;
+  --accent-dark: #9B4C8F;
   
   /* Dark mode glass effect */
   --glass-bg: rgba(15, 23, 42, 0.8);
