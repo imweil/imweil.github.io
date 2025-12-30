@@ -42,3 +42,8 @@ next-env.d.ts
 
 # wrangler
 .wrangler
+
+
+# cv
+
+/public/chenwei_cv.pdf

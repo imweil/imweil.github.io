@@ -13,4 +13,4 @@
 - Minor in Business Administration
 
 ## 📄 Full CV
-You can view my full CV by clicking [HERE](https://drive.google.com/file/d/1YXde2iY2zwtJKPRhEgia_oPetMypxljb/view) (PDF format on Google Drive).
+You can view my full CV by clicking [HERE](/chenwei_cv.pdf).
